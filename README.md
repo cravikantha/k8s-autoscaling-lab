@@ -52,22 +52,22 @@ Compared to the original project, this repository includes:
 ---
 
 ## ⚙️ Architecture Overview
-+-----------------------------+
-|     VirtualBox VMs          |
-|                             |
-|  +----------------------+   |
-|  | controlplane         |   |
-|  | (K8s Control Plane)  |   |
-|  +----------------------+   |
-|             |               |
-|  +----------------------+   |
-|  | worker-node-01       |   |
-|  +----------------------+   |
-|             |               |
-|  +----------------------+   |
-|  | worker-node-02       |   |
-|  +----------------------+   |
-+-----------------------------+
++-----------------------------+\
+|     VirtualBox VMs          |\
+|                             |\
+|  +----------------------+   |\
+|  | controlplane         |   |\
+|  | (K8s Control Plane)  |   |\
+|  +----------------------+   |\
+|             |               |\
+|  +----------------------+   |\
+|  | worker-node-01       |   |\
+|  +----------------------+   |\
+|             |               |\
+|  +----------------------+   |\
+|  | worker-node-02       |   |\
+|  +----------------------+   |\
++-----------------------------+\
 
 ---
 # 📋 Requirements
@@ -148,15 +148,15 @@ vagrant up --provision
 ./scripts/cleanup.sh
 ```
 
-k8s-hpa-homelab/
+k8s-hpa-homelab/\
 ├── configs/          # Kubernetes configs\
 ├── scripts/          # Provisioning & helper scripts\
 ├── manifests/        # HPA demo manifests\
 ├── demo/             # Demo steps & documentation\
 ├── settings.yaml     # Worker node count\
-├── Vagrantfile
-├── kubeconfig.txt
-└── README.md
+├── Vagrantfile\
+├── kubeconfig.txt\
+└── README.md\
 
 #🔮 Future Work
 -Migrate setup to AWS EKS
