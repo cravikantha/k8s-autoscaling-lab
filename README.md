@@ -50,26 +50,6 @@ Compared to the original project, this repository includes:
 ✅ **Clean structure for academic use**
 
 ---
-
-## ⚙️ Architecture Overview
-+-----------------------------+\
-|     VirtualBox VMs          |\
-|                             |\
-|  +----------------------+   |\
-|  | controlplane         |   |\
-|  | (K8s Control Plane)  |   |\
-|  +----------------------+   |\
-|             |               |\
-|  +----------------------+   |\
-|  | worker-node-01       |   |\
-|  +----------------------+   |\
-|             |               |\
-|  +----------------------+   |\
-|  | worker-node-02       |   |\
-|  +----------------------+   |\
-+-----------------------------+\
-
----
 # 📋 Requirements
 
 Make sure the following are installed on your host machine:
